@@ -85,7 +85,6 @@ graph TD
 ---
 
 
-```markdown
 # Kinetic Capacitor Guardian
 
 **A Bi-Directional Agentic Ecosystem for Preemptive Thermal Runaway Mitigation in Hybrid Heavy Machinery.**
@@ -154,10 +153,6 @@ gcloud run deploy kinetic-backend \
   --max-instances 1 \
   --no-cpu-throttling
 
-# 3. Note the Service URL
-# Example: [https://kinetic-backend-xyz.run.app](https://kinetic-backend-xyz.run.app)
-
-```
 
 **Critical Configuration:**
 
