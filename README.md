@@ -126,7 +126,6 @@ The system is distributed across three primary components:
 | **Frontend** | **Next.js 16** | React framework with Server Actions. |
 | **3D Engine** | **React Three Fiber** | WebGL rendering and GLSL shaders. |
 | **Backend** | **Python FastAPI** | Physics simulation and REST/WebSocket API. |
-| **Infrastructure** | **Google Cloud Run** | Serverless container deployment. |
 
 ---
 
