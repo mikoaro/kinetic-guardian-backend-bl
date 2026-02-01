@@ -132,11 +132,10 @@ The system is distributed across three primary components:
 ## 🚀 Installation & Deployment
 
 ### Prerequisites
-* **Google Cloud SDK** (gcloud) installed and authenticated.
-* **Node.js 18+** and **Python 3.10+**.
+* **Node.js 24+** and **Python 3.14+**.
 * **IBM Cloud Account** with watsonx Orchestrate access.
 
-### 1. Backend Deployment (Google Cloud Run)
+### 1. Backend Deployment (IBM Cloud Code Engine)
 
 The backend handles the physics simulation and API endpoints.
 
@@ -144,13 +143,7 @@ The backend handles the physics simulation and API endpoints.
 # 1. Navigate to backend directory
 cd kinetic-backend
 
-# 2. Deploy to Cloud Run (Source-based deployment)
-gcloud run deploy kinetic-backend \
-  --source . \
-  --region us-central1 \
-  --allow-unauthenticated \
-  --max-instances 1 \
-  --no-cpu-throttling
+# 2. 
 
 
 **Critical Configuration:**
