@@ -1,0 +1,66 @@
+{
+  "openapi": "3.0.0",
+  "info": { "title": "Kinetic Capacitor Guardian Skills", "version": "1.3.0" },
+  "servers": [ { "url": "" } ],
+  "paths": {
+    "/vision/camera": {
+      "get": {
+        "operationId": "getCameraFeed",
+        "summary": "Retrieve current image from onboard camera",
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/vision/validate": {
+      "get": {
+        "operationId": "validateVisuals",
+        "summary": "Analyze camera feed for fire",
+        "description": "Checks internal vision system for fire. No inputs required.",
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/inventory/check": {
+      "get": {
+        "operationId": "checkInventory",
+        "summary": "Check inventory",
+        "parameters": [
+          { "name": "part_id", "in": "query", "schema": { "type": "string", "default": "KOM-204296" } }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/service/ticket": {
+      "post": {
+        "operationId": "createTicket",
+        "summary": "Create ticket",
+        "parameters": [
+          { "name": "severity", "in": "query", "schema": { "type": "string", "default": "CRITICAL" } },
+          { "name": "description", "in": "query", "schema": { "type": "string", "default": "Thermal Runaway" } }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/field-service/dispatch": {
+      "post": {
+        "operationId": "dispatchTech",
+        "summary": "Dispatch tech",
+        "parameters": [
+          { "name": "location", "in": "query", "schema": { "type": "string", "default": "Austin Site" } }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/iot/derate": {
+      "post": {
+        "operationId": "derateMachine",
+        "summary": "Derate machine",
+        "parameters": [
+          { "name": "torque_limit", "in": "query", "schema": { "type": "integer", "default": 50 } }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/simulation/reset": {
+      "post": { "operationId": "resetSimulation", "summary": "Reset", "responses": { "200": { "description": "OK" } } }
+    }
+  }
+}
