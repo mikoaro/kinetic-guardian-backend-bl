@@ -1,7 +1,7 @@
 # Kinetic Capacitor Guardian
 
 
-[Kinetic Capacitor Guardian Frontend, Field Service Management and Digital Twin](https://kinetic-guardian-frontend-80514976508.us-central1.run.app)
+[Kinetic Capacitor Guardian Frontend, Field Service Management and Digital Twin](https://kinetic-capacitor-guardian.netlify.app)
 
 [Kinetic Capacitor Guardian Frontend Source](https://github.com/mikoaro/kinetic-guardian-frontend-bl)
 
